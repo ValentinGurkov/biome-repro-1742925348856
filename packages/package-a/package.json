@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"main": "build/index.js",
 	"scripts": {
+		"check": "biome check --write .",
 		"build": "tsc"
 	},
 	"dependencies": {},

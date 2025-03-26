@@ -6,13 +6,19 @@
 		"useIgnoreFile": true,
 		"defaultBranch": "develop"
 	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": ["**/*.d.ts"]
+	},
 	"organizeImports": {
 		"enabled": true
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+            "correctness": {
+                "noUnusedVariables": "error"
+            }
 		}
 	}
 }
