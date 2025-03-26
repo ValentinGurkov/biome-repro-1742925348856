@@ -5,3 +5,4 @@
  * Once you have a minimal reproduction, commit it and push it to a public
  * GitHub repo.
  */
+var a;
