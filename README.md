@@ -2,7 +2,7 @@ Running `check` for a monorepo project in `2.0.0-beta.1` reports errors for igno
 
 How to reproduce:
 
-1. On the main branch run:
+1. On the `master` branch run:
 ```
 pnpm i
 cd packages/package-a/
@@ -21,4 +21,4 @@ pnpm check
 
 The diagnostics also report errors for `build/src/index.js` related to the rule `noUnusedVariables`.
 
-This regression could be related to how the `.gitignore` file is handled, the reworked rule `noUnusedVariables`, or the new multi-file analysis feature that the reworked rule is based on.
+This regression could be related to how the `.gitignore` file is handled, the rule `noUnusedVariables`, or the new multi-file analysis feature.
