@@ -8,17 +8,21 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["**/*.d.ts"]
+		"includes": ["**", "!**/*.d.ts"]
 	},
-	"organizeImports": {
-		"enabled": true
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-            "correctness": {
-                "noUnusedVariables": "error"
-            }
+			"correctness": {
+				"noUnusedVariables": "error"
+			}
 		}
 	}
 }
